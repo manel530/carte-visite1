@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carte de Visite</title>
+  <style>
+    body {
+      background-color: #f0f4f8;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .carte {
+      background-color: white;
+      padding: 20px 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      max-width: 350px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .carte:hover {
+      transform: scale(1.05);
+    }
+
+    .photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      object-fit: cover;
+      border: 3px solid #007BFF;
+    }
+
+    .nom {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .infos {
+      margin: 10px 0;
+      font-size: 15px;
+    }
+
+    .btn-contact {
+      background-color: #007BFF;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .btn-contact:hover {
+      background-color: #0056b3;
+    }
+
+    .reseaux {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .reseaux a {
+      text-decoration: none;
+      color: black;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+
+    .reseaux a:hover {
+      color: #007BFF;
+    }
+
+    .lien-page {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+
+  <!-- Icônes Font Awesome (CDN Correct) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <div class="carte">
+    <img src="3.jpg" alt="Photo de profil" class="photo">
+    <div class="nom" id="nom">ANIS</div>
+    <div class="infos" id="email">📧 ANIS@gmail.com</div>
+    <div class="infos" id="tel">📞 +213 07 78 01 45 94</div>
+
+    <div class="reseaux">
+      <a href="https://linkedin.com/in/jeandupont" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/jeandupont" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://twitter.com/jeandupont" target="_blank" title="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/el_ba_ro_n?igsh=YzFvcDllZDVlY2Vr" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.instagram.com/el_ba_ro_n?igsh=YzFvcDllZDVlY2Vr" target="_blank" title="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+    <div><button class="btn-contact" onclick="afficherInfos()">Voir plus</button></div>
+  </div>
+    <script>
+    function afficherInfos() {
+      alert("Adresse : Constantine");
+    }
+  </script>
+</body>
+</html>
